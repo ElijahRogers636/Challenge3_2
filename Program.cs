@@ -22,7 +22,7 @@
             double sum = 0;
             foreach (var num in numbers)
             {
-                if(Convert.ToInt32(num) > 47 && Convert.ToInt32(num) < 58)
+                if(Char.IsNumber(num))
                 {
                     sum += num - '0';
                 }    
